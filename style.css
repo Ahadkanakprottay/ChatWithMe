@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+    color: var(--primary);
+}
+:root{
+    --primary: #005b96;
+}
+.wrapper{
+    height: 95vh;
+    width: 92vw;
+    background-color:#ffffff;
+    -webkit-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.25);
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.25);
+    border-radius: 10px;
+}
+.form{
+    padding: 25px 30px;
+}
+.form header{
+    font-size: 30px;
+    font-weight: 700;
+    border-bottom: 2px solid var(--primary);
+    margin-bottom: 15px;
+}
+.form form .error-text{
+    color: #721c24;
+    background-color: #f8d7da;
+    text-align: center;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    border: 2px solid #f5c6cb;
+    padding: 12px 10px;
+}
+.form form .field{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+.form form .field input{
+    outline: none;
+}
+.form form .input input{
+    height: 50px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 30px;
+    padding-left: 20px;
+    border: 2px solid var(--primary);
+    border-radius: 30px;
+    color: var(--primary);
+}
+.form form .input input::placeholder{
+    font-size: 16px;
+    color: var(--primary);
+}
+.form form .image input{
+    font-size: 17px;
+}
+.form form .button input{
+    height: 50px;
+    border: none;
+    font-size: 17px;
+    border-radius: 25px;
+    background-color: var(--primary);
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+}
+.form form .image input[type="file"]{
+    display: none;
+}
+.form form .image label{
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    height: 50px;
+    border-radius: 25px;
+}
+.form .link{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 25px;
+    font-weight: 500;
+}
+.form .link a{
+    color: var(--primary);
+    font-size: 17px;
+    font-weight: 600;
+}
+.btn{
+    border: 2px solid var(--primary);
+    padding: 3px 15px;
+    border-radius: 25px;
+    font-size: 17px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+.flex{
+    display: flex;
+}
+.justify-center{
+    justify-content: center;
+}
+.align-center{
+    align-items: center;
+}
+.flex-column{
+    flex-direction: column;
+}
