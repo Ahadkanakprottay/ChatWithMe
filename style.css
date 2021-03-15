@@ -48,9 +48,17 @@ body{
     display: flex;
     flex-direction: column;
     margin-top: 15px;
+    position: relative;
 }
 .form form .field input{
     outline: none;
+}
+.form form .field i{
+    position: absolute;
+    top: 17px;
+    right: 15px;
+    opacity: 0.5;
+    cursor: pointer;
 }
 .form form .input input{
     height: 50px;
@@ -109,6 +117,203 @@ body{
 }
 
 
+/* Users Area*/
+.users{
+    padding: 25px 30px;
+}
+.users header,
+.users-list a{
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 20px;
+    justify-content: space-between;
+}
+.users header .content img{
+    height: 50px;
+    width: 50px;
+}
+.wrapper img{
+    border-radius: 50%;
+    border: 2px solid var(--primary);
+    object-fit: cover;
+}
+:is(.users, .users-list) .content{
+    display: flex;
+    align-items: center;
+}
+:is(.users, .users-list) .details{
+    margin-left: 15px;
+    color: var(--primary);
+}
+:is(.users, .users-list) .details span{
+    font-size: 16px;
+    font-weight: 500;
+}
+.users header .logout{
+    font-size: 15px;
+    padding: 7px 15px;
+    background-color: var(--primary);
+    color: #fff;
+    border-radius: 25px;
+}
+.users .search{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--primary);
+}
+.users .search .text{
+    font-size: 16px;
+}
+.users .search input{
+    position: absolute;
+    height: 42px;
+    width: calc(100% - 50px);
+    border: 2px solid var(--primary);
+    border-radius: 25px 0 0 25px;
+    font-size: 14px;
+    outline: none;
+    padding-left: 20px;
+}
+.users .search button{
+    width: 47px;
+    height: 42px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: var(--primary);
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 0 25px 25px 0;
+}
+.users-list{
+    max-height: 350px;
+    overflow-y: auto;
+}
+.users-list::-webkit-scrollbar{
+    width: 0;
+}
+.users-list a{
+    border-bottom: 1px solid var(--primary);
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    page-break-after: 10px;
+}
+.users-list a:first-child{
+    border-top: none;
+}
+.users-list a:last-child{
+    border-bottom: 2px solid var(--primary);
+}
+.users-list a .content img{
+    height: 40px;
+    width: 40px;
+}
+.users-list a .status-dot{
+    font-size: 12px;
+    color: #468669;
+}
+.users-list a .status-dot.offline{
+    color: #ccc;
+}
+.users-list a .content p{
+    opacity: 0.5;
+    font-size: 13px;
+    font-weight: 500;
+}
+.users-list a .content span{
+    font-size: 15px;
+    font-weight: 500;
+}
+.users header .content .details p{
+    font-size: 13px;
+    font-weight: 500;
+    opacity: 0.5;
+}
+@media screen and (min-height: 568px) {
+    .users-list{
+        max-height: 310px;
+        overflow-y: auto;
+    };
+}
+@media screen and (min-height: 640px) {
+    .users-list{
+        max-height: 400px;
+        overflow-y: auto;
+    };
+}
+@media screen and (min-height: 653px) {
+    .users-list{
+        max-height: 350px;
+        overflow-y: auto;
+    };
+}
+@media screen and (min-height: 667px) {
+    .users-list{
+        max-height: 425px;
+        overflow-y: auto;
+    };
+}
+@media screen and (min-height: 720px) {
+    .users-list{
+        max-height: 480px;
+        overflow-y: auto;
+    };
+}
+@media screen and (min-height: 731px) {
+    .users-list{
+        max-height: 490px;
+        overflow-y: auto;
+    };
+}
+@media screen and (min-height: 736px) {
+    .users-list{
+        max-height: 485px;
+        overflow-y: auto;
+    };
+}
+@media screen and (min-height: 812px) {
+    .users-list{
+        max-height: 560px;
+        overflow-y: auto;
+    };
+}
+@media screen and (min-height: 823px) {
+    .users-list{
+        max-height: 580px;
+        overflow-y: auto;
+    };
+}
+@media screen and (min-height: 1024px) {
+    .users-list{
+        max-height: 760px;
+        overflow-y: auto;
+    };
+}
+@media screen and (min-height: 1366px) {
+    .users-list{
+        max-height: 1080px;
+        overflow-y: auto;
+    };
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -124,4 +329,7 @@ body{
 }
 .flex-column{
     flex-direction: column;
+}
+.justify-between{
+    justify-content: space-between ;
 }
