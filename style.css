@@ -88,6 +88,11 @@ body{
     cursor: pointer;
     font-weight: 600;
 }
+.form form .button input:hover{
+    background-color: #fff;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+}
 .form form .image input[type="file"]{
     display: none;
 }
@@ -116,8 +121,18 @@ body{
     margin-top: 10px;
     cursor: pointer;
 }
-
-
+.form .link a{
+    color: var(--primary);
+    font-size: 17px;
+    font-weight: 600;
+}
+.form .link .btn:hover{
+    color: #fff;
+    background-color: var(--primary);
+}
+.form .link .btn:hover a{
+    color: #fff;
+}
 /* Users Area*/
 .users{
     padding: 25px 30px;
@@ -158,6 +173,11 @@ body{
     color: #fff;
     border-radius: 25px;
 }
+.users header .logout:hover{
+    color: var(--primary);
+    background-color: #fff;
+    border: 1px solid var(--primary);
+}
 .users .search{
     margin-top: 20px;
     display: flex;
@@ -180,6 +200,11 @@ body{
     outline: none;
     padding-left: 20px;
     border-right: none;
+    color: var(--primary);
+}
+.users .search input::placeholder{
+    color: var(--primary);
+    font-weight: 500;
 }
 .users .search button{
     width: 47px;
@@ -206,6 +231,9 @@ body{
     padding-bottom: 10px;
     page-break-after: 10px;
 }
+.users-list a:hover{
+    background-color: #ECF0F7 ;
+}
 .users-list a:first-child{
     border-top: none;
 }
@@ -218,7 +246,7 @@ body{
 }
 .users-list a .status-dot{
     font-size: 12px;
-    color: #468669;
+    color: var(--primary);
 }
 .users-list a .status-dot.offline{
     color: #ccc;
@@ -341,15 +369,14 @@ body{
     background-color: var(--primary);
     cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
+.wrapper{
+    position: relative;
+}
+.wrapper .chat-area form{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
 .flex{
     display: flex;
 }
